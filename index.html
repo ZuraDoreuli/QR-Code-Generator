@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Code Keeper</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1>QR Code Generator</h1>
+    </header>
+    <main class="main">
+      <div class="content">
+        <h2 class="title">Enter your URL</h2>
+        <p class="text">
+          QR Codes allow smartphone users to access your website simply and quickly
+        </p>
+        <input 
+          type="text" 
+          class="input" 
+          placeholder="Enter a URL"
+        >
+        <button class="btn">Generate QR Code</button>
+      </div>
+      <div class="image-block">
+        <span class="error-text">
+          Please enter a URL
+        </span>
+        <img src="" alt="Image" class="qr-code-img">
+        <svg class="loader" viewBox="25 25 50 50">
+          <circle r="20" cy="50" cx="50"></circle>
+        </svg>
+      </div>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
